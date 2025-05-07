@@ -28,15 +28,15 @@ export function Todolist(props: PropsType) {
             // addTask();
         }
     }
-
+    const posrednik = ()=>{
+        props.removeTodolist(props.id)
+    }
 
     return <div>
         <h3> {props.title}
             <Button
                 title={"x"}
-                onClick={
-                props.removeTodolist
-            }
+                onClick={posrednik}
                 id={props.id}
             >
             </Button>
